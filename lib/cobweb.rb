@@ -209,6 +209,7 @@ class Cobweb
           puts "Retrieved." unless @options[:quiet]
 
           # create the content container
+          content[:myoptions] = @options
           content[:url] = uri.to_s
           content[:status_code] = response.code.to_i
           content[:mime_type] = ""
